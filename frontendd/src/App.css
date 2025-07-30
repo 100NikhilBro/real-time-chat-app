@@ -1,0 +1,12 @@
+/* Scrollbar ko hide karne ke liye */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: overflow allow karne ke liye */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
