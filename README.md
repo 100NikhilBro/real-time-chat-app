@@ -45,11 +45,10 @@ ZapChat is a full-stack real-time chat application built with a focus on **speed
 
 ## 📸 Screenshots
 
-> screenshots below :
-
-![Login Page](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072259.png)
-![Chat Interface](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072343.png)
-![User Profile](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072437.png)
+[Chat Interface](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072839.png)
+[Search](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072259.png)
+[](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072343.png)
+[Login Page](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072437.png)
 
 
 
