@@ -47,7 +47,7 @@ ZapChat is a full-stack real-time chat application built with a focus on **speed
 
 > Add your screenshots below (hosted on GitHub, Cloudinary, or local `assets/` folder in repo):
 
-![Login Page](./assets/login.png)
+![Login Page](https://github.com/100NikhilBro/real-time-chat-app/blob/master/Screenshot%202025-07-30%20072259.png)
 ![Chat Interface](./assets/chat.png)
 ![User Profile](./assets/profile.png)
 
