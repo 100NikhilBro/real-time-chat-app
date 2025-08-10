@@ -18,7 +18,7 @@ module.exports = function initSocket(server) {
 
 
     io.on("connection", (socket) => {
-        console.log("🔌 Socket Connected:", socket.user.name || "Unknown");
+        // console.log("🔌 Socket Connected:", socket.user.name || "Unknown");
 
         socket.join(socket.user._id.toString());
 
@@ -27,7 +27,7 @@ module.exports = function initSocket(server) {
 
 
         socket.on("disconnect", () => {
-            console.log("Socket Disconnected:", socket.user.name || "Unknown");
+            // console.log("Socket Disconnected:", socket.user.name || "Unknown");
         });
     });
 
