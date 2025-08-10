@@ -6,7 +6,7 @@ module.exports = function messageHandlers(io, socket) {
     socket.on("join-chat", (chatId) => {
         if (chatId) {
             socket.join(chatId);
-            console.log(`Socket ${socket.id} joined chat room: ${chatId}`);
+            // console.log(`Socket ${socket.id} joined chat room: ${chatId}`);
         }
     });
 
@@ -31,7 +31,7 @@ module.exports = function messageHandlers(io, socket) {
 
 
             io.to(chatId).emit("new-message", fullMessage);
-            console.log(`Message sent by ${socket.user.name} in chat ${chatId}`);
+            // console.log(`Message sent by ${socket.user.name} in chat ${chatId}`);
 
         } catch (error) {
             console.error("Send Message Error:", error.message);
