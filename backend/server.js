@@ -27,7 +27,7 @@ app.use(express.json());
 
 const cors = require('cors');
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://real-time-chat-app-1-hwyc.onrender.com",
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     credentials: true,
 }))
