@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MessageSquare } from 'lucide-react';
 import { motion } from 'framer-motion';
-import UserList from '../components/userList';
+import UserList from '../components/UserList';
 import Chat from '../components/Chat';
 
 const ChatPage = () => {
