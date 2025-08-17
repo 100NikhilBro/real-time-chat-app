@@ -8,6 +8,9 @@ const socket = io("https://real-time-chat-app-wpf4.onrender.com", {
     token: token,
   },
   withCredentials: true,
+  reconnection: true,
+  reconnectionAttempts: 5,
+  reconnectionDelay: 3000,
 });
 
 export default socket;
