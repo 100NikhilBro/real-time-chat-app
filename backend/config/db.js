@@ -6,17 +6,17 @@ const dbConnect = async() => {
     try {
         await mongoose.connect(process.env.DATABASE_URL, {
             useNewUrlParser: true,
-            useUnifiedTopology: true,  
-            ssl: true,                
-            tlsAllowInvalidCertificates: true,
+            useUnifiedTopology: true,
+            serverSelectionTimeoutMS: 20000, 
+            socketTimeoutMS: 45000,
+            family: 4, 
         });
 
-        console.log("Connected Successfully");
-
+        console.log("MongoDB Connected Successfully");
     } catch (e) {
-        console.log("Connection Failed:", e.message);
+        console.log("MongoDB Connection Failed:", e.message);
+        console.log("Full error:", e);
         throw new Error(e);
     }
 }
-
 module.exports = dbConnect;
