@@ -4,15 +4,17 @@ require('dotenv').config();
 
 const dbConnect = async() => {
     try {
-        mongoose.connect(process.env.DATABASE_URL, {
+        await mongoose.connect(process.env.DATABASE_URL, {
             useNewUrlParser: true,
-            UseUnifiedTopology: true,
-        })
+            useUnifiedTopology: true,  
+            ssl: true,                
+            tlsAllowInvalidCertificates: true,
+        });
 
         console.log("Connected Successfully");
 
     } catch (e) {
-        console.log("Connection Failed");
+        console.log("Connection Failed:", e.message);
         throw new Error(e);
     }
 }
