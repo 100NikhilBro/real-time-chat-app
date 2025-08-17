@@ -10,7 +10,7 @@ export const SocketProvider = ({ children }) => {
     const token = localStorage.getItem("zapchat_token");
 
     if (token) {
-      const newSocket = io("http://localhost:6174", {
+      const newSocket = io("https://real-time-chat-app-wpf4.onrender.com", {
         auth: { token },
         withCredentials: true,
       });
