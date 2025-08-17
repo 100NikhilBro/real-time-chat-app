@@ -1,8 +1,16 @@
 import axios from "axios";
 
 
+// export const messageInstance = axios.create({
+//     baseURL: "/api/v1/users/chats/messages",
+// });
+
+
+const BASE_URL = "https://real-time-chat-app-wpf4.onrender.com";
+
 export const messageInstance = axios.create({
-    baseURL: "/api/v1/users/chats/messages",
+    baseURL: BASE_URL + "/users/chats/messages",
+    withCredentials: true
 });
 
 
