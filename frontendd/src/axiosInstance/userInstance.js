@@ -1,8 +1,19 @@
 import axios from "axios"
 
+// const userInstannce = axios.create({
+//     baseURL: "/api/v1/users"
+// })
+
+
+
+const BASE_URL = "https://real-time-chat-app-wpf4.onrender.com";
+
 const userInstannce = axios.create({
-    baseURL: "/api/v1/users"
+    baseURL: BASE_URL + "/users",
+    withCredentials: true
 })
+
+
 
 //Automatically attach token to every request
 userInstannce.interceptors.request.use((config) => {
