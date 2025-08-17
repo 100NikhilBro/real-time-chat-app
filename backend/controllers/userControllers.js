@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const { validationResult } = require('express-validator');
-const { cleanInput } = require("../utils/SanitizeInputs.js");
-const { hashedPassword, verifyPassword } = require("../utils/securePassword.js");
+const { cleanInput } = require("../utils/SanitizeInputs");
+const { hashedPassword, verifyPassword } = require("../utils/SecurePassword");
 const { v2: cloudinary } = require("cloudinary");
 const jwt = require("jsonwebtoken");
 
