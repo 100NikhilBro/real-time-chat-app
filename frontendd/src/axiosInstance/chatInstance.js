@@ -5,7 +5,7 @@ import axios from "axios";
 // })
 
 
-const BASE_URL = "https://real-time-chat-app-wpf4.onrender.com";
+const BASE_URL = "https://real-time-chat-app-wpf4.onrender.com/api/v1";
 
 export const chatInstance = axios.create({
     baseURL: BASE_URL + "/users/chats",
