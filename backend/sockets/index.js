@@ -1,13 +1,13 @@
 const socketAuth = require("./socketAuth");
 const messageHandlers = require("./messagehandler");
-require('dotenv').config();
+// require('dotenv').config();
 
 module.exports = function initSocket(server) {
     const { Server } = require("socket.io");
 
     const io = new Server(server, {
         cors: {
-            origin: process.env.FRONTEND_URL,
+            origin: "https://real-time-chat-app-1-hwyc.onrender.com",
             methods: ["GET", "POST"],
             credentials: true,
         },
